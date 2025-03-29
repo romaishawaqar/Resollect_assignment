@@ -33,8 +33,7 @@ const DataUpload = ({ closeModal }) => {
   };
 
   return (
-    <div className="p-4 border rounded shadow-md">
-      {/* Upload Form */}
+    <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-[40rem] p-4 border rounded shadow-md bg-white">
       <form onSubmit={handleSubmit}>
         <div className="mb-2">
           <label className="block font-semibold">Document Name</label>
@@ -74,7 +73,6 @@ const DataUpload = ({ closeModal }) => {
           />
         </div>
 
-        {/* Hidden File Input */}
         <input
           type="file"
           ref={fileInputRef}
@@ -82,13 +80,14 @@ const DataUpload = ({ closeModal }) => {
           onChange={handleFileChange}
         />
 
-        {/* Upload & Submit Button */}
-        <button type="submit" className="px-4 py-2 bg-blue-600 text-black rounded w-full">
+        <button
+          type="submit"
+          className="px-4 py-2 bg-blue-600 text-black rounded w-full"
+        >
           📂 Select File & Upload
         </button>
       </form>
 
-      {/* Uploaded Files List */}
       {files.length > 0 && (
         <div className="mt-4 p-4 border rounded">
           <h2 className="text-lg font-bold mb-2">Uploaded Files</h2>
