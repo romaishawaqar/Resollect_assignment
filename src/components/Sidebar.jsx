@@ -6,7 +6,7 @@ const Sidebar = () => {
     <div className="w-64 h-screen bg-gray-900 text-white p-4 fixed top-0 left-0">
       <h2 className="text-lg font-bold mb-6">🔹 Resollect</h2>
       <nav className="space-y-2">
-        <Link to="/" className="flex items-center p-2 rounded bg-blue-600">
+        <Link to="/" className="flex items-center p-2 rounded hover:bg-blue-600">
           <FaHome className="mr-2" /> Dashboard
         </Link>
         <Link to="/portfolio" className="flex items-center p-2 rounded hover:bg-blue-700">
